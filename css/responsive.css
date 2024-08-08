@@ -1,0 +1,98 @@
+/* for tablets */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .run-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+    .bmi-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmi-body{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer-main{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .footer-content{
+        grid-column: 1 / -1;
+    }
+    .link, .link{
+        grid-column: span 1;
+    }
+
+}
+
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+    .navbar-main {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-btn-container{
+        display: none;
+    }
+
+    .nav-hamburger-menu {
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .banner-card-1-container{
+        left: 190px;
+        top: 60px;
+    }
+    .banner-card-2-container{
+        right: 160px;
+        top: 270px;
+    }
+    .btn-container{
+        justify-content: space-around;
+    }
+    .run-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .bmi-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmi-body{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .members{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .footer-content,  .link, .link{
+        grid-column: 1 / -1;
+    }
+}

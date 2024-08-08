@@ -1,0 +1,475 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* italic font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mr+Dafoe&display=swap');
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 5rem;
+  }
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+
+.bg-red{
+    background-color: rgba(230, 83, 60, 1);
+    ;
+}
+.bg-black{
+    background-color: black;
+}
+
+.text-title{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.text-gray{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    font-size: 0.875rem;
+}
+
+.btn{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 42px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    text-wrap: nowrap;
+}
+
+#btn-join{
+    border: none;
+    color: white;
+}
+
+/* nav style starts here*/
+.navbar-wrapper{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 0 20px;
+
+    
+}
+.navbar-main{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-weight: 800;
+    font-size: 2.25rem;
+    font-style: italic;
+    color: rgba(230, 83, 60, 1);
+}
+.nav-btn-container ul{
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 39px;
+    padding: 4px;
+    font-size: 1.125rem;
+}
+.nav-btn-container ul li{
+    list-style: none;
+    border-radius: 39px;
+    padding: 8px 20px;
+}
+.nav-btn-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-hamburger-menu{
+    display: none;
+}
+/* nav style ends here*/
+
+/* banner style starts here */
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.banner-content{
+    max-width: 430px;
+}
+.banner-h1{
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.banner-container{
+    gap: 80px;
+    align-items: center;
+    margin-top: 50px;
+}
+.btn-container{
+    gap: 10px;
+}
+.btn-container button{
+    margin-top: 28px;
+}
+
+.banner-img{
+    position: relative;
+}
+.banner-img img{
+    width: 100%;
+}
+
+.banner-card-1{
+    max-width: 193px;
+    max-height: 98px;
+    text-wrap: nowrap;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.813rem;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.banner-card-2-content{
+    max-width: 193px;
+    max-height: 98px;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 12px;
+    font-size: 0.813rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.card-2-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.banner-card-2{
+    flex-direction: column;
+    gap: 5px;
+
+}
+.card-h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.banner-card-1-container{
+    position: absolute;
+    top: 125px;
+    left: 230px;
+}
+.banner-card-2-container{
+    position: absolute;
+    top: 410px;
+    right: 260px;
+}
+/* banner style ends here */
+
+/* habits style starts here */
+.habits{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 110px;
+    margin: 0 auto;
+}
+.habits-container{ 
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+    max-width: 90%;
+}
+.habits-text-content{
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 450px;
+}
+.habits-card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.habits-card{
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.habits-card img{
+    width: 100%;
+    border-radius: 50%;
+}
+.habits-card h3{
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+/* habits style ends here */
+
+/* run style starts here */
+.run{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.run-container{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    padding: 40px 55px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 165px;
+    max-width: 90%;
+}
+.run-text-content{
+    max-width: 400px;
+}
+.run-text-content h1{
+    margin-bottom: 14px;
+}
+.run-text-content button{
+    margin-top: 35px;
+}
+
+.run-img-content{
+    
+}
+
+.run-img-content img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* run style ends here */
+
+
+/* bmi style stars here */
+.bmi-main{
+    width: 100%;
+    margin: 0 auto;
+}
+.bmi-header{
+    padding: 90px 20px;
+    margin: 0px auto;
+    max-width: 670px;
+    text-align: center;
+}
+.bmi-body{
+    width: 100%;
+    background-color: rgba(34, 34, 34, 1);
+    gap: 100px;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 40px 55px;
+}
+.bmi-left h1{
+    font-size: 1.75rem;
+}
+.bmi-left p, table{
+    font-size: 0.875rem;
+}
+.table-container{
+    margin-top: 45px;
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+
+}
+th{
+    font-weight: 800;
+}
+
+.bmi-right{
+   max-width: 577px;
+}
+.bmi-right h1{
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+}
+.form-main{
+    margin-top: 34px;
+}
+.form-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.form-field{
+    width: 48%;
+    margin-top: 12px;
+}
+.form-field-factor{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.form-main button{
+    margin-top: 35px;
+}
+
+
+.form-container 
+input,
+select{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 12px 20px 12px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* bmi style ends here */
+
+
+/* team style starts here */
+.team{
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.team-container{
+    padding: 40px 55px;
+}
+.team-header{
+    max-width: 670px;
+    text-align: center;
+    margin-bottom: 58px;
+}
+.team-header h1{
+    margin-bottom: 14px;
+}
+
+.members{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 20px;
+    border-radius: 18px;
+
+}
+.member{
+    max-width: 270px;
+    max-height: 270px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+
+}
+.member img{
+    width: 100%;
+    height: 270px;
+    display: block;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.member-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    text-align: left;
+}
+.member-details h4{
+    font-size: 1.25rem;
+}
+
+/* team style ends here */
+
+/* footer style starts here */
+footer{
+    background-color: rgba(34, 34, 34, 1);
+}
+.footer-main{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 100px;
+    padding: 70px 20px;
+}
+.footer-content{
+    max-width: 443px;
+}
+.link ul{
+    list-style: none;
+}
+.link ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 28px;
+    font-size: 1.438rem;
+
+}
+.link h3{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.footer-content h1{
+    font-size: 4.375rem;
+    margin-bottom: 20px;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+}
+.copyright p{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 35px 0;
+}
+/* footer style ends here */

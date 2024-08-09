@@ -10,6 +10,14 @@
         align-items: center;
         margin-top: 50px;
     }
+    .banner-card-1-container{
+        left: 170px;
+        top: 60px;
+    }
+    .banner-card-2-container{
+        right: 120px;
+        top: 270px;
+    }
     .run-container{
         flex-direction: column;
         justify-content: center;
@@ -57,13 +65,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin-top: 50px;
     }
     .banner-card-1-container{
-        left: 190px;
+        left: 170px;
         top: 60px;
     }
     .banner-card-2-container{
-        right: 160px;
+        right: 120px;
         top: 270px;
     }
     .btn-container{

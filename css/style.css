@@ -145,6 +145,7 @@
 }
 .banner-img img{
     width: 100%;
+    object-fit: cover;
 }
 
 .banner-card-1{
@@ -238,6 +239,7 @@
 .habits-card img{
     width: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
 .habits-card h3{
     margin-top: 30px;
@@ -278,6 +280,7 @@
 .run-img-content img{
     width: 100%;
     border-radius: 18px;
+    object-fit: cover;
 }
 
 /* run style ends here */
